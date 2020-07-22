@@ -1,0 +1,146 @@
+.navbar{
+    background-color:var(--dark-color) ;
+}
+
+
+.navbar .nav-link{
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--light-color);
+    opacity: 0.5;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:active
+{
+   opacity: 1;
+}
+
+.hero{
+  
+}
+
+.hero-bg{
+  opacity: 0.7;
+ }
+
+.hero-box{
+    height: 68%;
+    width: 53.33%;
+    margin-top: 120px;
+    position: absolute;
+    left: 36%;
+}
+
+.white-box{
+    background-color: var(--light-color);
+    position: relative;
+    height: 100%;
+    width: 46.6%;
+    float: right;
+    bottom: 94%;
+}
+
+.hero-img{
+    z-index: 1;
+}
+
+.hero-text{
+    bottom: 40%;
+    position: absolute;
+    z-index: 2;
+    font-family: var(--heading-font-family);
+    margin-left: -370px;
+}
+
+.hero-text h1{
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 128px;
+    color: var(--light-color);
+}
+
+.hero-text h2{
+    font-size: 48px;
+    line-height: 64px;
+    color: #FFFFFF;
+}
+
+/* 
+main section,
+main section section{
+padding-top: 10vh;
+}
+
+.section-title{
+    font-weight: 500;
+}
+
+.masthead{
+    margin-bottom: 15vh;
+}
+.navbar, .home-container{
+    box-shadow: none!important;
+}
+
+.navbar .nav-item .nav-link{
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.navbar .nav-item .nav-link:active,
+.navbar .nav-item .nav-link.active{
+color:#aa66cc!important;
+}
+
+.top-nav-collapse {
+    background-color: black; }
+
+.navbar-brand{
+    font-weight: bold;
+    font-size: 1.33rem!important;
+    line-height: 36px;    
+    color: #FEFEFE!important;
+letter-spacing: 0.5px;
+}
+
+
+.home-container{
+    background: inherit;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex; justify-content: center;
+    text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  
+} */
+/* 
+
+.side-nav{
+    width:2.5rem;
+    height:2.5rem;
+    border: 1px #F4F4F4 solid;
+    border-radius: 50%; 
+    box-shadow: 0px 0px 2px #888;
+}
+
+.main-bodyText{
+    padding: 0 1.5rem;
+    max-width: 500px;
+    margin-bottom: 20vh!important;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+  }
+
+.cover-leadText{
+    font-size: 1.5rem!important;
+    line-height: 2.25rem;
+  
+}
+.side-nav-block{
+    left: 90%
+}
+ */
+
+

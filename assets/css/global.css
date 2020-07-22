@@ -1,0 +1,35 @@
+:root{
+
+    --dark-color: #121212;
+    --secondary-color: #E5E5E5;
+    --light-color: #FFFFFF; 
+
+    --text-font-family: 'Lato', sans-serif;
+    --heading-font-family: 'Playfair Display', serif;
+
+}
+
+html{
+    scroll-behavior: smooth!important;
+}
+
+
+body {  
+  background-color: var(--light-color);
+  font-family: var(--text-font-family);
+  color:  var(--dark-color);
+  position: relative;
+}
+
+/* Links-global
+a{    
+    text-decoration: none!important;
+    color : #E8E7E7!important;
+}  */
+
+a:focus,
+a:hover,
+a:active {
+    color:  var(--dark-color);;
+}
+

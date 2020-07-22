@@ -1,0 +1,16 @@
+.about-article-box{
+    box-shadow: 2px 8px 20px rgba(196, 196, 196, 0.2);
+}
+
+.about-camera{
+    position: relative;
+}
+
+
+.about-article{
+    font-family: Lato;
+font-style: normal;
+font-weight: 300;
+font-size: 34px;
+line-height: 41px;
+}
