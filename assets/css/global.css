@@ -116,3 +116,45 @@ a:active {
 
 
 }
+
+.bar {
+    background: var(--primary-color);
+    display: inline-block;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    margin-bottom: 0.3rem;
+    transition: 0.3s ease;
+  }
+  
+  .bar::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: -8px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+  }
+  
+  .bar::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 8px;
+    height: 3px;
+    background: var(--primary-color);
+    left: 0;
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar {
+    background: transparent;
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar::before {
+    transform: rotate(45deg) translateY(11px);
+  }
+  
+  .navbar-toggler[aria-expanded='true'] .bar::after {
+    transform: rotate(-45deg) translateY(-12px);
+  }
