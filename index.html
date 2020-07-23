@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
 
     <!-- Bootstrap core CSS -->
@@ -10,24 +11,18 @@
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- Lato&Playfair Display Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Lato|Playfair+Display" rel="stylesheet">
-    <!-- Poppins Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display" rel="stylesheet">
-
-
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/main.css">
-    <title>Ken Maxwell</title>
+    <title>Rebacca Wook</title>
 
 
 </head>
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md fixed-top scrolling-navbar py-0 px-5" id="home-navbar">
-        <a class="navbar-brand px-5" id="brand" href="#"><img src="assets/img/logo/KM Logo.svg" ></a>
+    <nav class="navbar navbar-expand-md fixed-top scrolling-navbar py-3 px-5" id="home-navbar">
+        <a class="navbar-brand px-5" id="brand" href="#"><img src="assets/img/logo/RW Logo.svg" ></a>
        
         <div class="collapse navbar-collapse" id="navbarText">
           <ul class="navbar-nav nav ml-auto mr-5">
@@ -38,42 +33,41 @@
               <a class="nav-link" href="#about-me">About</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link " href="#">Portfolio</a>
+              <a class="nav-link " href="#">Projects</a>
             </li>
             <li class="nav-item px-3">
-              <a class="nav-link" href="#services">Services</a>
+              <a class="nav-link" href="#services">Testimonial</a>
             </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#journal">Prices</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#clients">Clients</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+            
             </ul> 
+
+            <a type="button" class="btn btn-outline-primary btn-mid">Contact Me</a>
+            <a name="" id="" class="btn btn-primary btn-mid" href="#" role="button">Hire Me</a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" style="color: white;"></span>
               </button>
         </div>
       </nav>
      <!-- Hero -->
-     <section class="home-container h-100 d-block px-0 view" id="home">
-      <img class="hero-bg img-fluid w-100 h-100" src="./assets/img/hero-bg.png" alt="Hero Image">
+     <section class="home-container d-block pt-5" id="home">
 
-      <div class="mask flex-center">
-        <div class="hero-box">
-          <img src="assets/img/hero-img.png" class="hero-img img-fluid my-auto">
-          <div class="white-box"></div>
-          <div class="hero-text">
-            <h1>Ken Maxwell</h1>
-            <h2>Monochrome Photographer</h2>
-          </div>
+        <div class="pt-5 mt-5 home-intro text-center">
+          <h4 class="font-weight-bolder py-2 hero-text">Welcome</h1>
+          <h2 class="font-weight-bold py-2 hero-text">I'm Rebecca Wook</h2>
+          <p>Front End Developer / Wordpress Expert / Back End Developer</p>
+          <p class="pb-4">
+            I help designers, small agencies and businesses bring their ideas to life. 
+            Powered by <br> Figma, VS Code and coffee, I turn your requirements 
+            into CMS-ified and<br> ecommerce-ified websites on time.
+          </p>
           
+            <a href="#portfolio" class="btn btn-mid btn-outline-primary">My Projects</a>
+
+            <a href="#portfolio" class="btn btn-mid btn-primary">Hire Me</a>
         </div>
-      
-      </div>
+
+  
     </section>
     <!-- /Hero -->
 
@@ -81,28 +75,281 @@
 
 
 <main>
-  <!-- About -->
-  <section class="row about-row" >
-    
-    <div class="col-6 about-article-box mx-auto"> 
-      <img src="assets/img/about-camera.png" class="about-camera">
-      <img src="assets/img/about-flower.png" class="about-flower">
-      <div class="section-title-box"><h1 class="section-title">About Me</h1></div>
-      <article class="about-article"> 
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Habitant consectetur varius mauris pellentesque vulputate pretium mauris ullamcorper.
-        Urna, augue tincidunt dui velit laoreet porttitor.
-        Euismod donec nisl leo aliquam turpis metus rhoncus, nibh.
-        Sit pharetra enim in nisi, pulvinar nibh eu.
-      </article>
-
+   <!-- About -->
+  <section class="about-me" >
+  <div class="d-flex flex-row home-cards-row mb-4">
+    <div class="home-card p-3">
+      <img src="assets/img/svg/check.svg" alt="check-sign">
+      <h6 class="home-card-title">Fast</h6>
+      <p>Fast load times and lag free interaction, my highest priority.</p>
+    </div>
+    <div class="home-card p-3">
+      <img src="assets/img/svg/check.svg" alt="check-sign">
+      <h6 class="home-card-title">Responsive</h6>
+      <p>My layouts will work on any device, big or small.</p>
+    </div>
+    <div class="home-card p-3">
+      <img src="assets/img/svg/check.svg" alt="check-sign">
+      <h6 class="home-card-title">Intuitive</h6>
+      <p>Strong preference for easy to use, intuitive UX/UI.</p>
+    </div>
+    <div class="home-card p-3">
+      <img src="assets/img/svg/check.svg" alt="check-sign">
+      <h6 class="home-card-title">Dyanmic</h6>
+      <p>Websites don't have to be static, I love making pages come to life.</p>
     </div>
 
-  </section>
-  <!-- About -->
-</main> 
-<footer>
+  </div>
+  <div class="main-about-row row my-5 py-5">
+    <div class="col-md-5 offset-md-1">
+      <img class="img-fluid" src="assets/img/about-me.png" alt="about-me-photo">
+    </div>
+    <div class="col-md-4 about-me-box offset-md-1 ">
+      <h3 class="about-me-title heading">Need Creative Design? I can Help</h3>
+      <article class="about-me-text">I'm a Front-End Developer for ChowNow in Los Angeles, CA. 
+        I have serious passion for UI effects, animations and creating intuitive, 
+        dynamic user experiences. I help designers, small agencies and businesses
+         bring their ideas to life. Powered by Figma, VS Code and coffee, 
+         I turn your requirements into CMS-ified and ecommerce-ified websites - on time and on budget.</article>
+    </div>
+  </div>
 
+  <div class="text-center ">
+    <h3 class="about-me-title heading">What My Developer Skills Include</h3>
+    <p>A web application to help developers and programmers build beautifully<br> designed portfolios in minutes </p>
+  </div>
+  <div class="d-flex flex-row py-5 about-cards-row mb-5">
+    <div class="about-card p-3">
+      <img src="assets/img/svg/CSS.svg" alt="CSS">
+      <h6 class="home-card-title">CSS</h6>
+      <img src="assets/img/svg/progress (1).svg" alt="css progress">
+    </div>
+    <div class="about-card p-3">
+      <img src="assets/img/svg/react.svg" alt="React">
+      <h6 class="home-card-title">REACT</h6>
+      <img src="assets/img/svg/progress (2).svg" alt="react progress">
+    </div>
+    <div class="about-card p-3">
+      <img src="assets/img/svg/html.svg" alt="CSS">
+      <h6 class="home-card-title">HTML</h6>
+      <img src="assets/img/svg/progress (3).svg" alt="css progress">
+    </div>
+    <div class="about-card p-3">
+      <img src="assets/img/svg/js.svg" alt="CSS">
+      <h6 class="home-card-title">JAVASCRIPT</h6>
+      <img src="assets/img/svg/progress (4).svg" alt="css progress">
+    </div>
+  </div>
+  <div class="d-flex flex-row py-5 stats-row mb-5">
+    <div class="stat-block p-3">
+      <div class="stat-circle">900+</div>
+      <p>Happy <br> Clients</p>
+    </div>
+    <div class="stat-block p-3">
+      <div class="stat-circle">15</div>
+      <p>Years of<br>Experience</p>
+    </div>
+    <div class="stat-block p-3">
+      <div class="stat-circle">300</div>
+      <p>Awards <br> Winning</p>
+    </div>
+    <div class="stat-block p-3">
+      <div class="stat-circle">900+</div>
+      <p>Completed<br>Projects</p>
+    </div>
+  </div>
+  <div class="py-5 companies-block">
+    <div class="row mb-4">
+      <div class="col-md-5 offset-md-1">
+        <h3 class="heading">Companies I Have Worked With</h3>
+        <p>I am passionate about building excellent software that improves
+           the lives of those around me. I specialize in creating software 
+           for clients ranging from individuals and small-businesses all 
+           the way to large enterprise corporations. What would you do 
+           if you had a software expert available at your fingertips?</p>
+      </div>
+    </div>
+    <div class="row justify-content-md-between align-items-center py-5 my-4">
+      <div class="companies-logo-block col-md-2 offset-md-1">
+        <img src="assets/img/OCaml.png">
+      </div>
+      <div class="companies-logo-block col-md-2">
+        <img src="assets/img/mongolab.png">
+      </div>
+      <div class="companies-logo-block col-md-2">
+        <img src="assets/img/protonet.png">
+      </div>
+      <div class="companies-logo-block col-md-2">
+        <img src="assets/img/z-wave (1).png">
+      </div>
+      <div class="col-md-auto"></div>
+    </div>
+
+  </div>
+  </section>
+  <!-- /About -->
+  <!-- Projects -->
+  <section>
+    <div class="projects-intro text-center row">
+      <div class="col-md-5 py-5 mx-auto">
+        <h3 class="heading">My latest projects</h3>
+        <p class="pb-5">
+        Have a glance at some selected works i am proud of,
+         as i delivered solutions to branding and design pattern and design problems,
+         with in-depth research, innovation and creativity.
+       </p>
+      </div>
+      
+    </div>
+    <div class="projects-block px-5 pb-5">
+      <div class="row justify-content-center px-5 row-cols-sm-4 projects-row pb-5">
+        <div class="col project-card p-3">
+          <img src="assets/img/myspace.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/mongolab-sm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/protonet-sm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/qualcomm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/protonet-sm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/qualcomm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/myspace.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+        <div class="col project-card p-3">
+          <img src="assets/img/mongolab-sm.png" alt="">
+          <p>
+            A powerful, easy-to-configure form backend for designers
+             and developers. No coding required.
+          </p>
+          <a href="#">www.myspace.com.io</a>
+        </div>
+  
+      </div>
+  
+
+    </div>
+    <div class="projects-intro text-center row">
+      <div class="col-md-5 py-5 mx-auto">
+        <h3 class="heading">Interested In Collaborating?</h3>
+        <p class="">
+          I’m always open to discussing product design work or partnership opportunities 
+       </p>
+       <a href="#" class="btn btn-mid btn-primary">Hire Me</a>
+      </div>
+      
+    </div>
+  </section>
+  <!-- /Projects -->
+
+   <!-- Testimonial -->
+<div class="row py-5 testimonial-intro">
+  <div class="col-md-5 pt-5 offset-md-1">
+    <h3 class="heading">Testimonials</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+      Dignissim odio semper aenean dolor mauris. 
+      Id magna quisque lorem urna, vitae nisl turpis.</p>
+  </div>
+</div>
+<div class="row pb-5 mb-5">
+  <div class="col-md-5 pr-0 offset-md-1">
+    <div class="col-md-11 p-3 testimonial-card">
+      <div  class=" testimonial-head pb-2">
+        <img src="./assets/img/testimonial-1.png" class="mr-3" alt="">
+        <p class="pt-3"><span>Mull Din</span><br> Slack CEO </p>
+      </div>
+      <p class=" testimonial-body pb-3 pr-4"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Egestas pharetra risus sit nunc integer. 
+         Id sit porta habitant viverra sed.<span>"</span></p>
+    </div>
+  </div>
+  <div class="col-md-5 pl-0">
+    <div class="col-md-11 offset-md-1 p-3 pr-4 testimonial-card">
+      <div class="testimonial-head pb-2">
+        <img src="./assets/img/testimonial-2.png" class="mr-3" alt="">
+        <p class="pt-3"><span>Alice Alphred</span><br> Softcom CEO </p>
+      </div>
+      <p class=" testimonial-body pb-3"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Egestas pharetra risus sit nunc integer. 
+         Id sit porta habitant viverra sed.<span>"</span></p>
+    </div>
+</div>
+</div>
+<div class="contact-row row pt-4 pb-5 mb-5">
+  <div class="col-md-3 offset-md-1">
+    <h3 class="heading">Get In Touch</h3>
+    <p>Have a question or want to work together?</p>
+    <a class="pr-3" href="#"><i class="fab fa-behance-square"></i></a>
+    <a class="pr-3" href="#"><i class="fab fa-linkedin"></i></a>
+    <a class="pr-3" href="#"><i class="fab fa-dribbble pink-text"></i></a>    
+  </div>
+
+  <div class="col-md-5 offset-md-2">
+    <form class="p-0">
+    
+      <input type="text" id="ContactFormName" class="form-control form-control-lg  mb-3" placeholder="Name">
+  
+      <input type="email" id="ContactFormEmail" class="form-control mb-3 form-control-lg" placeholder="E-mail">
+
+      <input type="tel" id="ContactFormPhone" class="form-control mb-3 form-control-lg" placeholder="Phone">
+  
+      <textarea class="form-control rounded-0 mb-3" id="ContactFormMessage" rows="4" placeholder="Message"></textarea>
+  
+      <button class="btn btn-mid btn-primary" type="submit">Send Message</button>
+  </form>
+  
+  </div>
+</div>
+
+   
+ <!-- /Testimonial -->
+
+</main> 
+<footer class="footer p-4 text-center">
+  <p class="m-0">&copy; Copyright 2020 RW Portfolio. All rights reserved.</p>
 </footer>   
 
  <!-- JQuery -->

@@ -1,69 +1,52 @@
 .navbar{
     background-color:var(--dark-color) ;
+    box-shadow: none!important;
 }
 
-
 .navbar .nav-link{
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 16px;
+    line-height: 21px;
     color: var(--light-color);
-    opacity: 0.5;
+}
+
+.top-nav-collapse {
+    background-color:var(--dark-color);
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:active
 {
-   opacity: 1;
+    color: var(--primary-color);
 }
 
-.hero{
-  
+.home-container{
+    height: 720px;
+    background-color:var(--dark-color);
+   
+}
+.home-intro{
+    color:var(--light-color);
 }
 
-.hero-bg{
-  opacity: 0.7;
- }
-
-.hero-box{
-    height: 68%;
-    width: 53.33%;
-    margin-top: 120px;
-    position: absolute;
-    left: 36%;
+.home-cards-row{
+    justify-content: center;
+    margin-top: -71px;
 }
 
-.white-box{
-    background-color: var(--light-color);
-    position: relative;
-    height: 100%;
-    width: 46.6%;
-    float: right;
-    bottom: 94%;
+.home-card{
+    width: 20%;
+    background-color: #F2F4F7;;
+    text-align: center;
+    box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
+    border-radius: 8px;
+    margin: 0px 1.5px ;
 }
 
-.hero-img{
-    z-index: 1;
-}
-
-.hero-text{
-    bottom: 40%;
-    position: absolute;
-    z-index: 2;
-    font-family: var(--heading-font-family);
-    margin-left: -370px;
-}
-
-.hero-text h1{
-    font-weight: bold;
-    font-size: 96px;
-    line-height: 128px;
-    color: var(--light-color);
-}
-
-.hero-text h2{
-    font-size: 48px;
-    line-height: 64px;
-    color: #FFFFFF;
+.home-card-title{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 8px;
 }
 
 /* 
