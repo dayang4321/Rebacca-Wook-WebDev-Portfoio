@@ -89,6 +89,14 @@
     text-decoration: underline;
 }
 
+.mongolab-link{
+    color: #F7941D!important;
+}
+.protonet-link{
+    color:#E15B29!important;
+}
+
+
 
 .testimonial-card{
     color: #F2F4F7;
