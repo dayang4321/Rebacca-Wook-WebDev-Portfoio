@@ -20,7 +20,7 @@
 }
 
 .about-card{
-    width: 13.89%;
+    width: 237px;
     background-color: #F2F4F7;;
     text-align: center;
     box-shadow: 1px 2px 4px rgba(25, 61, 115, 0.1);
@@ -51,6 +51,12 @@
 
 }
 
+.companies-logo-block img{
+    width:100%
+}
+
+
+
 .projects-intro{
     background-color: var(--dark-color);
     color: var(--light-color);
@@ -64,7 +70,7 @@
     background: #F2F4F7;
     box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
     border-radius: 8px;
-    max-width: 20%!important;
+    max-width: 288px!important;
     text-align: center;
     margin: 6px 1.5px;
     display: flex;
@@ -122,4 +128,23 @@
 
 .contact-row a{
     font-size: 24px;
+}
+
+
+@media (max-width:768px){
+
+    .stat-circle{
+        margin: 0 auto 14px;
+    
+    }
+    .projects-row{
+        margin-top: 20px;
+    }
+    
+}
+@media (max-width:576px){
+    .companies-logo-block img{
+        width:30%
+    }
+  
 }

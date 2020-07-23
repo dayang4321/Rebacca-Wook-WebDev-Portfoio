@@ -101,3 +101,18 @@ a:active {
     text-align: center;
     letter-spacing: 0.05em;
 }
+
+@media (max-width:992px){
+    
+    .btn-mid{
+        font-size: 12px;    
+        line-height: 16px;
+}
+}
+
+
+@media (max-width:768px){
+
+
+
+}
