@@ -50,6 +50,14 @@ h4{
     font-weight: bold;
 }
 
+.heading span{
+    display: inline-block;
+    border-bottom: 8px solid  var(--primary-color);
+    box-sizing: border-box;
+    height: 40px;
+    border-radius: 4px;
+}
+
 
 /* Links-global
 a{    
@@ -102,13 +110,7 @@ a:active {
     letter-spacing: 0.05em;
 }
 
-@media (max-width:992px){
-    
-    .btn-mid{
-        font-size: 12px;    
-        line-height: 16px;
-}
-}
+
 
 
 @media (max-width:768px){

@@ -130,6 +130,50 @@
     font-size: 24px;
 }
 
+@media (max-width:1300px){
+
+    .about-card{
+        margin: 0px 30px ;
+    }
+}
+
+@media (max-width:1199px){
+
+    .about-card{
+        margin: 0px 15px ;
+        width: 200px;
+    }
+
+    .stat-block{
+        text-align: center;
+        margin: 0px 50px;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width:950px){
+
+    .about-card{
+        margin: 0px 40px ;
+        width: 230px;
+    }
+
+ 
+}
+
+@media (max-width:870px){
+
+    .stat-block{
+        text-align: center;
+        margin: 0px 90px;
+        text-align: center;
+    }
+}
+
+
 
 @media (max-width:768px){
 
