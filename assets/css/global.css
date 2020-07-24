@@ -1,7 +1,10 @@
+/* Global Styles (styles that affect the entire document) are set here */
+
+/* Poppins Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
 
+/* Default Variables */
 :root{
-
     --dark-color: #222831;
     --primary-color: #00ADB5;
     --secondary-color: #1C162B;
@@ -9,21 +12,17 @@
 
     --main-font-family: 'Poppins', sans-serif;
 
-
     --h1-font-size: 48px;
     --h2-font-size: 40px;
     --h3-font-size: 32px;
     --sub-heading-font-size: 24px;
     --body-text-font-size: 16px;
     --small-text-font-size: 8px;
-   
-
 }
 
 html{
     scroll-behavior: smooth!important;
 }
-
 
 body {  
     background-color: #E5E5E5;
@@ -33,16 +32,18 @@ body {
     font-size: var(--body-text-font-size);
 }
 
-h1{
+/* Headings Global*/
+
+h1 {
     font-size: var(--h1-font-size);
 }
-h2{
+h2 {
     font-size: var(--h2-font-size);
 }
-h3{
+h3 {
     font-size: var(--h3-font-size);
 }
-h4{
+h4 {
     font-size: var(--sub-heading-font-size);
 }
 
@@ -50,7 +51,8 @@ h4{
     font-weight: bold;
 }
 
-.heading span{
+/* Underline  Effect */
+.heading span {
     display: inline-block;
     border-bottom: 8px solid  var(--primary-color);
     box-sizing: border-box;
@@ -58,153 +60,41 @@ h4{
     border-radius: 4px;
 }
 
+/* Buttons Global */
 
-/* Links-global
-a{    
-    text-decoration: none!important;
-    color : #E8E7E7!important;
-}  */
-/* 
-a:focus,
-a:hover,
-a:active {
-    color:  var(--dark-color);;
-} */
-
-.btn{
+.btn {
     text-transform: capitalize;
-    border: 1px solid var(--primary-color)!important;
     border-radius: 4px;
     box-sizing: border-box;
 }
 
-.btn-outline-primary{
+.btn-outline-primary {
     color: var(--primary-color)!important;
-    border: 1px solid var(--primary-color)!important;
     border-color: var(--primary-color)!important;;
 }
 
-.btn-outline-primary:not(:disabled):not(.disabled):active{
-    color: var(--primary-color)!important;
-    border: 1px solid var(--primary-color)!important;
+.btn-outline-primary:not(:disabled):not(.disabled):active {
+    color: var(--primary-color)!important;  
     border-color: var(--primary-color)!important;
 }
 
 .btn-outline-primary:hover,
-.btn-outline-primary:active{
-        color: var(--primary-color)!important;
-        border-color: var(--primary-color)!important;
+.btn-outline-primary:active {
+    color: var(--primary-color)!important;
+    border-color: var(--primary-color)!important;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: var(--primary-color)!important;
 }
-.btn-primary:not(:disabled):not(.disabled):active{
+.btn-primary:not(:disabled):not(.disabled):active {
     background-color: var(--primary-color)!important;
 }
 
-.btn-mid{
+.btn-mid {
     font-size: 14px;
     line-height: 21px;
     text-align: center;
     letter-spacing: 0.05em;
 }
 
-
-
-
-@media (max-width:768px){
-    #home-navbar.nav-expanded{
-        height:100vh !important;
-        max-height: 700px! important;
-        background-color: #E5E5E5!important;
-        display: block;
-       
-    }
-
-    #home-navbar.nav-expanded .nav-link{
-  
-        font-size: 24px !important;
-        line-height: 28px !important;
-        color: var(--dark-color) !important;
-    }
-
-    .logo-button{
-        width: 100%;
-    }
-
-     #home-navbar.nav-expanded .nav-link.active,
-     #home-navbar.nav-expanded .nav-link:active {
-        color: var(--primary-color) !important;
-     }
-
-     #home-navbar.nav-expanded .btn-mid{
-        font-size: 16px;
-        line-height: 24px;
-        width: 300px;
-        max-width: 95%;
-}
-
-}
-
-.bar {
-    background: var(--primary-color);
-    display: inline-block;
-    width: 25px;
-    height: 3px;
-    position: relative;
-    margin-bottom: 0.3rem;
-    transition: 0.3s ease;
-  }
-  
-  .bar::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    top: -8px;
-    height: 3px;
-    background: var(--primary-color);
-    left: 0;
-  }
-  
-  .bar::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    top: 8px;
-    height: 3px;
-    background: var(--primary-color);
-    left: 0;
-  }
-  
-  .navbar-toggler[aria-expanded='true'] .bar {
-    background: transparent;
-  }
-  
-  .navbar-toggler[aria-expanded='true'] .bar::before {
-    transform: rotate(45deg) translateY(11px);
-  }
-  
-  .navbar-toggler[aria-expanded='true'] .bar::after {
-    transform: rotate(-45deg) translateY(-12px);
-  }
-
-
-  .navbar-toggler[aria-expanded='true'] .navbar {
-    max-height: 700px;
-    height: 100vh;
-    background-color: var(--primary-color);
-}
-
-
-
-
-/* .navbar-collapse.collapsing,
-.navbar-collapse.show {
-    background-color: #E5E5E5;
-} */
-
-
-#imege{
-    
-}

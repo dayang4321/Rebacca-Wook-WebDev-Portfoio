@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="description" content="Rebecca Wook Envato Web Developer Portfolio Template">
-    <link rel="icon" href="./assets/img/logo/RW Icon.ico" type="image/gif" sizes="16x16">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Rebecca Wook Envato Web Developer Portfolio Template">
+  <link rel="icon" href="./assets/img/logo/RW Icon.ico" type="image/gif" sizes="16x16">
 
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-
-    <link rel="stylesheet" href="./assets/css/global.css">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/main.css">
-    <link rel="stylesheet" href="./assets/css/loader.css">
-    <title>Rebacca Wook</title>
-
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./assets/css/global.css">
+  <link rel="stylesheet" href="./assets/css/header.css">
+  <link rel="stylesheet" href="./assets/css/about+projects.css">
+  <link rel="stylesheet" href="./assets/css/testimonial+footer.css">
+  <link rel="stylesheet" href="./assets/css/loader.css">
+  
+  <title>Rebacca Wook</title>
 
 </head>
 <body data-spy="scroll" data-target="#home-navbar">
+
+  <!-- Loader -->
   <div class="loader-box animated fadeOut" id="loading">
     <div class="loader">Loading...</div>
   </div>
-  
+  <!-- /Loader -->
+
+
 <header>
+    <!-- Navbar -->
     <nav  class="navbar navbar-expand-md navbar-dark px-3 px-lg-4 px-xl-5 fixed-top scrolling-navbar" id="home-navbar">
+
+      <!-- Navbar Logo and Toogle Button -->
       <div class="d-flex justify-content-between logo-button mb-2 mb-sm-3 mb-md-0">
         <a class="navbar-brand px-xl-5 px-lg-4 px-md-3 animated zoomIn"  href="#" id="brand"><img src="assets/img/logo/RW Logo.svg" id="brand-image" ></a>
         <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +45,9 @@
         </button>
       </div>
       
+      <!-- Collapsible Content -->
         <div class="collapse navbar-collapse" id="navbarText">
+          <!-- Navbar Links -->
           <ul class="navbar-nav nav ml-auto mr-xl-5 mr-lg-4 mr-md-3 mr-2">
             <li class="nav-item my-3 my-md-0  px-xl-3 px-1 ">
               <a class="nav-link " href="#home">Home</a>
@@ -49,71 +61,69 @@
             <li class="nav-item my-3 my-md-0  px-xl-3 px-1">
               <a class="nav-link" href="#testimonial">Testimonial</a>
             </li>
-            
-            </ul> 
+          </ul> 
+
+          <!-- Navbar Buttins -->
             <div>
               <a type="button" class="btn btn-outline-primary btn-mid animated pulse my-3 my-md-0 ">Contact Me</a>
             </div>
             <div>
               <a  class="btn btn-primary btn-mid animated pulse my-3 my-md-0 " href="#" role="button">Hire Me</a>
             </div>
-            
-
-           
         </div>
-       
-      </nav>
-     <!-- Hero -->
-     <section class="home-container d-block pt-5 px-3" id="home">
+      <!-- /Collapsible Content -->
+
+    </nav>
+    <!-- /Navbar -->
+
+    <!-- Home -->
+    <section class="home-container d-block pt-5 px-3" id="home">
 
         <div class="pt-5 mt-5 home-intro text-center">
           <h4 class="font-weight-bolder py-2 hero-text">Welcome</h1>
           <h2 class="font-weight-bold py-2 hero-text">I'm Rebecca Wook</h2>
           <p>Front End Developer / Wordpress Expert / Back End Developer</p>
-          <p class="pb-4">
-            I help designers, small agencies and businesses bring their ideas to life. 
+          <p class="pb-4">I help designers, small agencies and businesses bring their ideas to life. 
             Powered by <br> Figma, VS Code and coffee, I turn your requirements 
-            into CMS-ified and<br> ecommerce-ified websites on time.
-          </p>
-          
-            <a href="#portfolio" class="btn btn-mid btn-outline-primary">My Projects</a>
-
-            <a href="#portfolio" class="btn btn-mid btn-primary">Hire Me</a>
+            into CMS-ified and<br> ecommerce-ified websites on time.</p>
+          <a href="#portfolio" class="btn btn-mid btn-outline-primary">My Projects</a>
+          <a href="#portfolio" class="btn btn-mid btn-primary">Hire Me</a>
         </div>
 
-  
     </section>
-    <!-- /Hero -->
+    <!-- /Home -->
 
 </header>
 
-
 <main>
    <!-- About -->
-  <section class="about-me" id="about" >
-  <div class="home-cards-row row mx-auto mb-4">
-    <div class="home-card p-3 animated slideInUp ">
+  <section class="about-me" id="about">
+
+  <!-- Intro Cards -->
+  <div class="intro-cards-row row mx-auto mb-4">
+    <div class="intro-card p-3 animated slideInUp ">
       <img src="assets/img/svg/check.svg" alt="check-sign">
-      <h6 class="home-card-title">Fast</h6>
+      <h6 class="intro-card-title">Fast</h6>
       <p>Fast load times and lag free interaction, my highest priority.</p>
     </div>
-    <div class="home-card p-3 animated slideInUp">
+    <div class="intro-card p-3 animated slideInUp">
       <img src="assets/img/svg/check.svg" alt="check-sign">
       <h6 class="home-card-title">Responsive</h6>
       <p>My layouts will work on any device, big or small.</p>
     </div>
-    <div class="home-card p-3 animated slideInUp">
+    <div class="intro-card p-3 animated slideInUp">
       <img src="assets/img/svg/check.svg" alt="check-sign">
       <h6 class="home-card-title">Intuitive</h6>
       <p>Strong preference for easy to use, intuitive UX/UI.</p>
     </div>
-    <div class="home-card p-3 animated slideInUp">
+    <div class="intro-card p-3 animated slideInUp">
       <img src="assets/img/svg/check.svg" alt="check-sign">
       <h6 class="home-card-title">Dyanmic</h6>
       <p>Websites don't have to be static, I love making pages come to life.</p>
     </div>
-
   </div>
+  <!-- /Intro Cards -->
+
   <div class="main-about-row mx-auto px-3 row my-xl-5 my-4 py-xl-5 py-lg-4 py-3">
     <div class="col-md-5 text-center py-4 px-0 offset-md-1 wow slideInLeft">
       <img class="img-fluid" src="assets/img/about-me.png" alt="about-me-photo">
@@ -132,6 +142,8 @@
     <h3 class="about-me-title heading"><span>What My Dev</span>eloper Skills Include</h3>
     <p>A web application to help developers and programmers build beautifully<br> designed portfolios in minutes </p>
   </div>
+
+  <!-- Skills Cards -->
   <div class="py-xl-5 py-lg-4 py-md-3 about-cards-row row mx-auto mb-xl-5 mb-lg-4 mb-3">
     <div class="about-card mb-3 p-3 wow zoomIn">
       <img src="assets/img/svg/CSS.svg" alt="CSS">
@@ -154,6 +166,9 @@
       <img class="img-fluid" src="assets/img/svg/progress (4).svg" alt="css progress">
     </div>
   </div>
+  <!-- /Skills Cards -->
+
+  <!-- Stats Block -->
   <div class="stats-row row py-xl-5 py-lg-4 py-3 mx-auto mb-xl-5 mb-lg-3 mb-3 wow fadeIn" id="zouma"> 
     <div class="stat-block p-3">
       <div class="stat-circle"><span class="stat">900</span>+</div>
@@ -172,6 +187,8 @@
       <p>Completed<br>Projects</p>
     </div>
   </div>
+  <!-- /Stats Block -->
+
   <div class="pb-xl-5 pb-lg-4 pb-md-3 pb-sm-2 pb-0 pt-xl-5 py-4  companies-block">
     <div class="row py-3 mx-auto mb-xl-4 mb-lg-3 mb-md-0">
       <div class="col-md-5 offset-md-1  wow slideInLeft">
@@ -183,6 +200,8 @@
            if you had a software expert available at your fingertips?</p>
       </div>
     </div>
+
+    <!-- Client Logos -->
     <div class="row justify-content-between mx-auto align-items-center py-xl-5 py-lg-4 py-md-3 py-1 my-xl-4 my-lg-3 my-2">
       <div class="companies-logo-block text-center col-sm-2 py-3 py-sm-0 offset-sm-1 wow slideInUp">
         <img class="img-fluid" src="assets/img/OCaml.png">
@@ -198,12 +217,15 @@
       </div>
       <div class="col-sm-auto"></div>
     </div>
-
+    <!-- /Client Logos -->
   </div>
+
   </section>
   <!-- /About -->
+
   <!-- Projects -->
   <section class="pt-3" id="projects">
+
     <div class="projects-intro px-4 text-center mx-auto row wow fadeIn">
       <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 py-5 mx-auto">
         <h3 class="heading"><span>My lates</span>t projects</h3>
@@ -213,11 +235,14 @@
          with in-depth research, innovation and creativity.
        </p>
       </div>
-      
     </div>
-    <div class="projects-block px-xl-5 px-lg-4 px-md-3 px-sm-2 px-1 pb-xl-5 pb-lg-4 pb-md-3 pb-sm-2 pb-1  ">
-      <div class="row justify-content-center mx-auto px-xl-4 px-lg-3 px-2 row-cols-lg-4 row-cols-md-2 row-cols-1 projects-row pb-xl-5 pb-lg-4 pb-md-3 pb-sm-2 pb-1 ">
-        <div class="col project-card p-3">
+
+    <div class="projects-block px-1 pb-xl-5 pb-lg-4 pb-md-3 pb-sm-2 pb-1  ">
+
+      <!-- Project Cards -->
+      <div class="row justify-content-center mx-auto projects-row pb-xl-5 pb-lg-4 pb-md-3 pb-sm-2 pb-1 ">
+        
+        <div class="project-card p-3">
           <img src="assets/img/myspace.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -225,7 +250,7 @@
           </p>
           <a href="#">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/mongolab-sm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -233,7 +258,7 @@
           </p>
           <a href="#" class="mongolab-link">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/protonet-sm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -241,7 +266,7 @@
           </p>
           <a href="#" class="protonet-link">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/qualcomm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -249,7 +274,7 @@
           </p>
           <a href="#">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/protonet-sm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -257,7 +282,7 @@
           </p>
           <a href="#" class="protonet-link">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/qualcomm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -265,7 +290,7 @@
           </p>
           <a href="#">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/myspace.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -273,7 +298,7 @@
           </p>
           <a href="#">www.myspace.com.io</a>
         </div>
-        <div class="col project-card p-3">
+        <div class="project-card p-3">
           <img src="assets/img/mongolab-sm.png" alt="">
           <p>
             A powerful, easy-to-configure form backend for designers
@@ -283,9 +308,10 @@
         </div>
   
       </div>
-  
-
+      <!-- /Project Cards -->
     </div>
+
+    <!-- Call To Action -->
     <div class="projects-intro text-center mx-auto row wow fadeIn">
       <div class="col-xl-5 col-lg-6 col-md-7 col-sm-8 py-md-5 py-4 mx-auto">
         <h3 class="heading"><span>Interested I</span>n Collaborating?</h3>
@@ -294,14 +320,16 @@
        </p>
        <a href="#" class="btn btn-mid btn-primary wow pulse">Hire Me</a>
       </div>
-      
     </div>
-  </section>
-  <!-- /Projects -->
+     <!-- /Call To Action -->
+</section>
+<!-- /Projects -->
 
-   <!-- Testimonial -->
+   
+<!-- Testimonial & Contact -->
+<section id="testimonial">
 
-<div class="row py-xl-5 py-lg-4 py-md-3 py-sm-2 py-1 px-md-0 mx-auto  testimonial-intro" id="testimonial">
+<div class="row py-xl-5 py-lg-4 py-md-3 py-sm-2 py-1 px-md-0 mx-auto  testimonial-intro" >
   <div class="col-md-5 pt-xl-5 pt-4 offset-md-1  wow slideInLeft">
     <h3 class="heading about-article-box pt-3"><span>Testimonial</span>s</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -309,14 +337,17 @@
       Id magna quisque lorem urna, vitae nisl turpis.</p>
   </div>
 </div>
-<div class="testimonials-row row pb-xl-5 pb-lg-4 pb-md-3 pb-2 py-2  px-4 mx-auto mb-xl-5 mb-lg-4 mb-md-3 mb-2">
+
+ <!-- Testimonial Cards-->
+<div class="testimonials-row row pb-xl-5 pb-lg-4 pb-md-3 pb-2 py-2  px-4 mx-auto mb-xl-5 mb-lg-4 mb-md-3 mb-2"> 
+
   <div class="col-md-5 mb-3 px-0 offset-md-1">
     <div class="col-md-11 p-3 testimonial-card wow flipInX">
       <div  class=" testimonial-head pb-2">
-        <img src="./assets/img/testimonial-1.png" class="mr-3" alt="">
-        <p class="pt-3"><span>Mull Din</span><br> Slack CEO </p>
+        <img src="./assets/img/testimonial-1.png" class="mr-3 d-none d-sm-inline" alt="">
+        <p class="pt-3 text-right text-sm-left pr-2"><span>Mull Din</span><br> Slack CEO </p>
       </div>
-      <p class=" testimonial-body pb-3 pr-3"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Egestas pharetra risus sit nunc integer. 
          Id sit porta habitant viverra sed.<span>"</span></p>
     </div>
@@ -324,53 +355,54 @@
   <div class="col-md-5  px-0">
     <div class="col-md-11 offset-md-1 p-3 pr-4 testimonial-card  wow flipInX">
       <div class="testimonial-head pb-2">
-        <img src="./assets/img/testimonial-2.png" class="mr-3" alt="">
-        <p class="pt-3"><span>Alice Alphred</span><br> Softcom CEO </p>
+        <img src="./assets/img/testimonial-2.png" class="mr-3 d-none d-sm-inline" alt="">
+        <p class="pt-3 text-right text-sm-left pr-2"><span>Alice Alphred</span><br> Softcom CEO </p>
       </div>
-      <p class=" testimonial-body pb-3 pr-3"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
          Egestas pharetra risus sit nunc integer. 
          Id sit porta habitant viverra sed.<span>"</span></p>
     </div>
+  </div>
+
 </div>
-</div>
+<!-- /Testimonial Cards-->
+
+<!-- Contact -->
 <div class="contact-row row pt-4 pb-xl-5 pb-lg-4 pb-2 mb-2 mb-xl-5 mb-lg-4 mb-md-3 mb-2 mx-auto">
   <div class="col-md-3 mb-4 offset-md-1">
     <h3 class="heading"><span>Get In Touc</span>h</h3>
     <p>Have a question or want to work together?</p>
-    <a class="pr-3 " href="#"><i class="fab fa-behance-square  wow jackInTheBox"></i></a>
-    <a class="pr-3 " href="#"><i class="fab fa-linkedin wow jackInTheBox"></i></a>
-    <a class="pr-3" href="#"><i class="fab fa-dribbble pink-text wow jackInTheBox"></i></a>    
+
+    <!-- Social Icons -->
+    <a class="pr-3 social-icon" href="#"><i class="fab fa-behance-square  wow jackInTheBox"></i></a>
+    <a class="pr-3 social-icon" href="#"><i class="fab fa-linkedin wow jackInTheBox"></i></a>
+    <a class="pr-3 social-icon" href="#"><i class="fab fa-dribbble pink-text wow jackInTheBox"></i></a>    
   </div>
 
   <div class="col-md-5 py-2 offset-md-2">
+    <!-- Contact Form -->
     <form class="p-0 text-center text-md-left">
     
-      <input type="text" id="ContactFormName" class="form-control form-control-lg  mb-3" placeholder="Name">
-  
+      <input type="text" id="ContactFormName" class="form-control form-control-lg  mb-3" placeholder="Name">  
       <input type="email" id="ContactFormEmail" class="form-control mb-3 form-control-lg" placeholder="E-mail">
-
-      <input type="tel" id="ContactFormPhone" class="form-control mb-3 form-control-lg" placeholder="Phone">
-  
+      <input type="tel" id="ContactFormPhone" class="form-control mb-3 form-control-lg" placeholder="Phone">  
       <textarea class="form-control rounded-0 mb-3" id="ContactFormMessage" rows="4" placeholder="Message"></textarea>
-  
       <button class="btn m-0 btn-mid btn-primary wow pulse" type="submit">Send Message</button>
-  </form>
-  
+
+    </form>
   </div>
 </div>
+<!-- /Contact -->
 
-   
- <!-- /Testimonial -->
-
+</section>
+<!-- /Testimonial & Contact -->
 </main> 
+
+<!-- Footer -->
 <footer class="footer p-4 text-center">
   <p class="m-0">&copy; Copyright 2020 RW Portfolio. All rights reserved.</p>
 </footer>   
-
-
-
-
- 
+<!-- /Footer -->
  
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -379,8 +411,9 @@
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>   
-    <script src="assets/js/index.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
+    <!-- Page Scripts -->
+    <script type="text/javascript" src="assets/js/index.js"></script>
 </body>
 
 
