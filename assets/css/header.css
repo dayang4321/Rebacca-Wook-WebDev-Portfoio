@@ -130,11 +130,23 @@
     max-width: 670px;
 }
 
+.name-intro{
+    font-weight: bold;
+}
+
 @media (max-width:768px){
 
     .home-container{
         min-height: 650px;
         height: 80vh;
  }
+
+}
+@media (max-width:576px){
+
+   
+.name-intro{
+    font-weight: 600;
+}
 
 }
