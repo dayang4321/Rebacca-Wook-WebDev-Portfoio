@@ -41,11 +41,6 @@
 
 
 /* Footer Section */
-
-.form-control{
-    background-color: transparent!important;
-}
-
 .footer{
     background-color: var(--dark-color);
     color:  var(--light-color); 
