@@ -127,17 +127,3 @@
     color:var(--light-color);
 }
 
-/* Medium Screens */
-@media (max-width:768px){
- 
-    .home-cards-row{
-        margin-top: 20px;
-    }
-    .home-container{
-       min-height: 650px;
-       height: 80vh;
-}
-    .home-card{
-        margin: 8px 1.5px;
-    }
-}
