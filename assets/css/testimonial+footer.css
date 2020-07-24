@@ -48,3 +48,13 @@
     line-height: 18px;
 }
 
+@media (max-width:768px){
+
+    .footer{
+        font-size: 7px;
+        line-height: 10px;
+    }
+}
+
+
+

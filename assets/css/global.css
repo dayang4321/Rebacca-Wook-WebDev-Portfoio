@@ -63,6 +63,7 @@ h4 {
     box-sizing: border-box;
     height: 40px;
     border-radius: 4px;
+    transition: border-bottom 700ms;
 }
 
 /* Form Inputs */
