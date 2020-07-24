@@ -32,6 +32,12 @@ body {
     font-size: var(--body-text-font-size);
 }
 
+#particle{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+}
+
 /* Wow.js Visibility on page load*/
 .wow {
     visibility: hidden;

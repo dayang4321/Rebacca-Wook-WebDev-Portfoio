@@ -21,7 +21,7 @@ $(window).resize(function () {
     if (($(window).width() > 767) &&  ($('#home-navbar').hasClass('nav-expanded'))) {
         $('#brand-image').attr('src', 'assets/img/logo/RW Logo.svg');
         $('.navbar-toggler').click()
-        console.log("Ooin")
+        // console.log("Ooin")
     }
        }
 )
@@ -32,12 +32,12 @@ $(window).scroll(function() {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        console.log('H1 on the view!');
+        // console.log('H1 on the view!');
         if ($('#stats-row').hasClass('counter-ran')) {
             return
         }
         else {
-            console.log('counter on the view!');
+            // console.log('counter on the view!');
             $('#stats-row').addClass('counter-ran');
             $('.stat').each(function () {
                 $(this).prop('Counter',0).animate({
@@ -56,7 +56,8 @@ $(window).scroll(function() {
  });
 
  /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('home', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
+particlesJS.load('particle', 'assets/js/particles-3.json', function() {
+    // console.log('callback - particles.js config loaded');
+}
+);
 
