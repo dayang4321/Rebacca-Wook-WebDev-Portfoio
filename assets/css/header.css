@@ -97,7 +97,9 @@
         line-height: 28px !important;
         color: var(--dark-color) !important;
     }
-
+    .nav-expanded .logo-button{
+        margin-bottom: 16px;
+    }
     .logo-button{
         width: 100%;
     }
