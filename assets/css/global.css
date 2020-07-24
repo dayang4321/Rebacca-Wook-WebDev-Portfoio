@@ -35,7 +35,7 @@ body {
 #particle{
     position: absolute;
     height: inherit;
-    width: inherit;
+    width: 97%;
 }
 
 /* Wow.js Visibility on page load*/
