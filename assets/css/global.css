@@ -32,6 +32,11 @@ body {
     font-size: var(--body-text-font-size);
 }
 
+/* Wow.js Visibility on page load*/
+.wow {
+    visibility: hidden;
+}
+
 /* Headings Global*/
 
 h1 {
