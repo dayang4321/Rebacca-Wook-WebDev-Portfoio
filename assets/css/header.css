@@ -126,7 +126,15 @@
 .home-intro {
     color:var(--light-color);
 }
+.intro-text{
+    max-width: 670px;
+}
 
 @media (max-width:768px){
-    
+
+    .home-container{
+        min-height: 650px;
+        height: 80vh;
+ }
+
 }
