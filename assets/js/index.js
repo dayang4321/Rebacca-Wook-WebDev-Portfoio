@@ -6,12 +6,17 @@ $( document ).ready(function() {
   
 
 //dispose preloader
-window.onload = (event) => {
-    $('#loading').addClass('animated fadeOut fast');
-    $('#loading').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-        document.getElementById("loading").style.display = "none" )
+$(window).on('load', function() {
+    $('#loading').delay(1000).fadeOut(300);
+  });
 
-}
+
+// window.onload = (event) => {
+//     $('#loading').addClass('animated fadeOut');
+//     $('#loading').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+//         document.getElementById("loading").style.display = "none" )
+
+// }
 
 //navbar expanded class toggle
 $('.navbar-toggler').click(function () {
