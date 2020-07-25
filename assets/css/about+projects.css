@@ -55,7 +55,7 @@
     }
 
     /* Medium Screens */
-@media (max-width:768px){
+@media (max-width:767px){
  
     .intro-cards-row{
         margin-top: 20px;
@@ -64,8 +64,10 @@
     .intro-card{
         margin: 8px 1.5px;
     }
+}    /* Long Screens */
+@media (max-width:767px and min-height:900px){
+ 
 }
-
 
 /* About Section*/
 
