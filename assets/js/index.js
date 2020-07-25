@@ -10,14 +10,6 @@ $(window).on('load', function() {
     $('#loading').delay(1000).fadeOut(300);
   });
 
-
-// window.onload = (event) => {
-//     $('#loading').addClass('animated fadeOut');
-//     $('#loading').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-//         document.getElementById("loading").style.display = "none" )
-
-// }
-
 //navbar expanded class toggle
 $('.navbar-toggler').click(function () {
     $('#home-navbar').toggleClass('nav-expanded');
@@ -69,12 +61,12 @@ $(window).resize(function () {
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        // console.log('H1 on the view!');
+    
         if ($('.skill-progress').hasClass('progress-animate')) {
             return
         }
         else {
-            // console.log('counter on the view!');
+          
             $('.skill-progress').addClass('progress-animate');
            
         }
