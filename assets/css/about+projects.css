@@ -64,13 +64,11 @@
     .intro-card{
         margin: 8px 1.5px;
     }
-}    /* Long Screens */
-@media (max-width:767px and min-height:900px){
- 
-}
+}    
+
+
 
 /* About Section*/
-
 
 .about-me-title{
     line-height: 48px;
@@ -112,19 +110,18 @@
   
     border-radius: 0;
     overflow: visible;
-    position: relative;
-    
-    background:#222831;
+    position: relative;   
+    background:var(--dark-color);
 }
 .progress .progress-bar.progress-animate{
 animation: animate-positive 2s;
-
+animation-delay: 500ms;
 }
 .progress .progress-bar:after{
     content: "";
     width: 3px;
     height: 14px;
-     background:#222831;
+     background:var(--dark-color);
     position: absolute;
     top: -3px;
     right: -1px;

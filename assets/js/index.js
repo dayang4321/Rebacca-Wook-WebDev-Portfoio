@@ -7,7 +7,7 @@ $( document ).ready(function() {
 
 //dispose preloader
 $(window).on('load', function() {
-    $('#loading').delay(1000).fadeOut(300);
+    $('#loading').delay(500).fadeOut(300);
   });
 
 //navbar expanded class toggle
