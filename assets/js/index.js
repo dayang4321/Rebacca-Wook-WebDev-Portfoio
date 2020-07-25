@@ -1,43 +1,47 @@
 
-
+//initialize wow.js
 $( document ).ready(function() {
     new WOW().init();
 });
   
-//Loading Fuction
+
+//dispose preloader
 window.onload = (event) => {
-    document.getElementById("loading").style.display = "none";
+    $('#loading').addClass('animated fadeOut fast');
+    $('#loading').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        document.getElementById("loading").style.display = "none" )
+
 }
 
-
+//navbar expanded class toggle
 $('.navbar-toggler').click(function () {
     $('#home-navbar').toggleClass('nav-expanded');
     $('#home-navbar').hasClass('nav-expanded') ? $('#brand-image').attr('src', 'assets/img/logo/RW-Logo-mobile.svg') : $('#brand-image').attr('src', 'assets/img/logo/RW Logo.svg');
-  //  $('#brand-image').attr('src')==="assets/img/logo/RW Logo.svg"? $('#brand-image').attr('src','assets/img/logo/RW-Logo-mobile.svg'):$('#brand-image').attr('src','assets/img/logo/RW Logo.svg') ;
+
 })
 
-
+//simulate nav button click on screen expand
 $(window).resize(function () {
     if (($(window).width() > 767) &&  ($('#home-navbar').hasClass('nav-expanded'))) {
         $('#brand-image').attr('src', 'assets/img/logo/RW Logo.svg');
-        $('.navbar-toggler').click()
-        // console.log("Ooin")
+        $('.navbar-toggler').click();
     }
        }
 )
 
-$(window).scroll(function() {
+//run functions on scroll position
+ $(window).scroll(function() {
     var hT = $('#stats-row').offset().top,
         hH = $('#stats-row').outerHeight(),
         wH = $(window).height(),
         wS = $(this).scrollTop();
     if (wS > (hT+hH-wH)){
-        // console.log('H1 on the view!');
+  
         if ($('#stats-row').hasClass('counter-ran')) {
             return
         }
         else {
-            // console.log('counter on the view!');
+         
             $('#stats-row').addClass('counter-ran');
             $('.stat').each(function () {
                 $(this).prop('Counter',0).animate({
@@ -54,10 +58,23 @@ $(window).scroll(function() {
         ;
     }
  });
+ $(window).scroll(function() {
+    var hT = $('#skills-block').offset().top,
+        hH = $('#skills-block').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+    if (wS > (hT+hH-wH)){
+        // console.log('H1 on the view!');
+        if ($('.skill-progress').hasClass('progress-animate')) {
+            return
+        }
+        else {
+            // console.log('counter on the view!');
+            $('.skill-progress').addClass('progress-animate');
+           
+        }
+        ;
+    }
+ });
 
- /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle', 'assets/js/particles-3.json', function() {
-    // console.log('callback - particles.js config loaded');
-}
-);
 

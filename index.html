@@ -22,19 +22,19 @@
   <link rel="stylesheet" href="./assets/css/about+projects.css">
   <link rel="stylesheet" href="./assets/css/testimonial+footer.css">
   <link rel="stylesheet" href="./assets/css/loader.css">
-  
+
  
 
 </head>
 <body data-spy="scroll" data-target="#home-navbar">
 
   <!-- Loader -->
-  <div class="loader-box animated fadeOut" id="loading">
+  <div class="loader-box" id="loading">
     <div class="loader">Loading...</div>
   </div>
   <!-- /Loader -->
 
-  <script src="./assets/js/particles.js"></script>
+ 
 <header>
     <!-- Navbar -->
     <nav  class="navbar navbar-expand-md navbar-dark px-3 px-lg-4 px-xl-5 fixed-top scrolling-navbar" id="home-navbar">
@@ -80,9 +80,10 @@
 
     <!-- Home -->
     
-    <section class="home-container d-block pt-5 px-3" id="home">
-      <div id="particle"></div>
-        <div class="pt-5 mt-sm-5 mt-3 home-intro text-center">
+    <section class="home-container d-block pt-5" id="home">
+      <div class="mt-n5" id="particles-js"></div>
+        <div class="pt-5 mt-sm-5  px-3 mt-3 home-intro text-center">
+         
           <h4 class="font-weight-bolder py-2 hero-text wow zoomIn">Welcome!</h1>
           <h2 class="name-intro py-2 hero-text wow fadeIn">I'm Rebecca Wook</h2>
           <p class="wow slideInUp" data-wow-delay="0.1s">Front End Developer / Wordpress Expert / Back End Developer</p>
@@ -141,7 +142,7 @@
     </div>
   </div>
 
-  <div class="text-center wow zoomIn">
+  <div class="text-center wow zoomIn"  id="skills-block">
     <h3 class="about-me-title heading"><span>What My Dev</span>eloper Skills Include</h3>
     <p>A web application to help developers and programmers build beautifully<br> designed portfolios in minutes </p>
   </div>
@@ -150,23 +151,31 @@
   <div class="py-xl-5 py-lg-4 py-md-3 about-cards-row row mx-auto mb-xl-5 mb-lg-4 mb-3">
     <div class="about-card mb-3 p-3 wow zoomIn hoverable">
       <img src="assets/img/svg/CSS.svg" alt="CSS">
-      <h6 class="home-card-title">CSS</h6>
-      <img class="img-fluid" src="assets/img/svg/progress (1).svg" alt="css progress">
+      <h6 class="intro-card-title mt-3">CSS</h6>
+      <div class="progress">
+        <div class="skill-progress progress-bar" style="width:90%; "></div>
+      </div>
     </div>
-    <div class="about-card mb-3 p-3 wow zoomIn hoverable">
+    <div class= "about-card mb-3 p-3 wow zoomIn hoverable">
       <img src="assets/img/svg/react.svg" alt="React">
-      <h6 class="home-card-title">REACT</h6>
-      <img class="img-fluid" src="assets/img/svg/progress (2).svg" alt="react progress">
+      <h6 class="intro-card-title mt-3">REACT</h6>
+      <div class="progress ">
+        <div class="skill-progress progress-bar" style="width:78%; "></div>
+      </div>
     </div>
     <div class="about-card mb-3 p-3 wow zoomIn hoverable">
       <img src="assets/img/svg/html.svg" alt="CSS">
-      <h6 class="home-card-title">HTML</h6>
-      <img class="img-fluid" src="assets/img/svg/progress (3).svg" alt="css progress">
+      <h6 class="intro-card-title mt-3">HTML</h6>
+      <div class="progress ">
+        <div class="skill-progress progress-bar" style="width:53%; "></div>
+      </div>
     </div>
     <div class="about-card mb-3 p-3 wow zoomIn hoverable">
       <img src="assets/img/svg/js.svg" alt="CSS">
-      <h6 class="home-card-title">JAVASCRIPT</h6>
-      <img class="img-fluid" src="assets/img/svg/progress (4).svg" alt="css progress">
+      <h6 class="intro-card-title mt-3">JAVASCRIPT</h6>
+      <div class="progress ">
+        <div class="skill-progress progress-bar" style="width:51%; "></div>
+      </div>
     </div>
   </div>
   <!-- /Skills Cards -->
@@ -341,31 +350,66 @@
 </div>
 
  <!-- Testimonial Cards-->
-<div class="testimonials-row row pb-xl-5 pb-lg-4 pb-md-3 pb-2 py-2  px-4 mx-auto mb-xl-5 mb-lg-4 mb-md-3 mb-2"> 
+ <div id="testimonial-carousel" class="carousel slide carousel-fade mb-0" data-interval=5000 data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="testimonials-row row pb-lg-4 pb-md-3 pb-2 py-2  px-4 mx-auto mb-xl-5 mb-lg-4 mb-md-3 mb-2"> 
 
-  <div class="col-md-5 mb-3 px-0 offset-md-1">
-    <div class="col-md-11 p-3 testimonial-card wow flipInX">
-      <div  class=" testimonial-head pb-2">
-        <img src="./assets/img/testimonial-1.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
-        <p class="pt-3 text-right text-sm-left pr-2"><span>Mull Din</span><br> Slack CEO </p>
+        <div class="col-md-5 mb-3 px-0 offset-md-1">
+          <div class="col-md-11 p-3 testimonial-card wow flipInX">
+            <div  class=" testimonial-head pb-2">
+              <img src="./assets/img/testimonial-1.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
+              <p class="pt-3 text-right text-sm-left pr-2"><span>Mull Din</span><br> Slack CEO </p>
+            </div>
+            <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Egestas pharetra risus sit nunc integer. 
+               Id sit porta habitant viverra sed.<span>"</span></p>
+          </div>
+        </div>
+        <div class="col-md-5  px-0">
+          <div class="col-md-11 offset-md-1 p-3 pr-4 testimonial-card  wow flipInX">
+            <div class="testimonial-head pb-2">
+              <img src="./assets/img/testimonial-2.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
+              <p class="pt-3 text-right text-sm-left pr-2"><span>Alice Alphred</span><br> Softcom CEO </p>
+            </div>
+            <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Egestas pharetra risus sit nunc integer. 
+               Id sit porta habitant viverra sed.<span>"</span></p>
+          </div>
+        </div>
+      
       </div>
-      <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Egestas pharetra risus sit nunc integer. 
-         Id sit porta habitant viverra sed.<span>"</span></p>
+    </div>
+    <div class="carousel-item">
+      <div class="testimonials-row row pb-xl-5 pb-lg-4 pb-md-3 pb-2 py-2  px-4 mx-auto mb-xl-5 mb-lg-4 mb-md-3 mb-2"> 
+
+        <div class="col-md-5 mb-3 px-0 offset-md-1">
+          <div class="col-md-11 p-3 testimonial-card wow flipInX">
+            <div class="testimonial-head pb-2">
+              <img src="./assets/img/testimonial-2.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
+              <p class="pt-3 text-right text-sm-left pr-2"><span>Alice Alphred</span><br> Softcom CEO </p>
+            </div>
+            <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Egestas pharetra risus sit nunc integer. 
+               Id sit porta habitant viverra sed.<span>"</span></p>
+          </div>
+        </div>
+        <div class="col-md-5  px-0">
+          <div class="col-md-11 offset-md-1 p-3 pr-4 testimonial-card  wow flipInX">
+            <div  class=" testimonial-head pb-2">
+              <img src="./assets/img/testimonial-1.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
+              <p class="pt-3 text-right text-sm-left pr-2"><span>Mull Din</span><br> Slack CEO </p>
+            </div>
+            <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Egestas pharetra risus sit nunc integer. 
+               Id sit porta habitant viverra sed.<span>"</span></p>
+            
+          </div>
+        </div>
+      
+      </div>
     </div>
   </div>
-  <div class="col-md-5  px-0">
-    <div class="col-md-11 offset-md-1 p-3 pr-4 testimonial-card  wow flipInX">
-      <div class="testimonial-head pb-2">
-        <img src="./assets/img/testimonial-2.png" class="mr-3 d-none d-sm-inline rounded-circle" alt="">
-        <p class="pt-3 text-right text-sm-left pr-2"><span>Alice Alphred</span><br> Softcom CEO </p>
-      </div>
-      <p class=" testimonial-body pb-3 pr-md-2"><span>"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-         Egestas pharetra risus sit nunc integer. 
-         Id sit porta habitant viverra sed.<span>"</span></p>
-    </div>
-  </div>
-
 </div>
 <!-- /Testimonial Cards-->
 
@@ -397,6 +441,9 @@
 
 </section>
 <!-- /Testimonial & Contact -->
+
+
+
 </main> 
 
 <!-- Footer -->
@@ -414,10 +461,11 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-   
-    
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/app.js"></script>
     <!-- Page Scripts -->
     <script type="text/javascript" src="assets/js/index.js"></script>
+   
 </body>
 
 

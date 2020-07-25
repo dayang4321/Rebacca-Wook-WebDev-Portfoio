@@ -13,7 +13,6 @@
     box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
     border-radius: 8px;
     margin: 3px 1.5px ;
-    z-index: 1;
     position: relative;
 }
 
@@ -69,6 +68,8 @@
 
 
 /* About Section*/
+
+
 .about-me-title{
     line-height: 48px;
     color: var(--dark-color);
@@ -95,6 +96,46 @@
     border-radius: 8px;
     margin: 0px 40px ;
 }
+
+/* Progress Bars */
+.progress{
+    height: 8px;
+    background: #C4C4C4;
+    margin-bottom: 11px;
+    margin-bottom: 15px;
+    border-radius: 0;
+    overflow: visible;
+}
+.progress .progress-bar{
+  
+    border-radius: 0;
+    overflow: visible;
+    position: relative;
+    
+    background:#222831;
+}
+.progress .progress-bar.progress-animate{
+animation: animate-positive 2s;
+
+}
+.progress .progress-bar:after{
+    content: "";
+    width: 3px;
+    height: 14px;
+     background:#222831;
+    position: absolute;
+    top: -3px;
+    right: -1px;
+    left:auto;
+}
+
+@-webkit-keyframes animate-positive{
+    0% { width: 0; }
+}
+@keyframes animate-positive{
+    0% { width: 0; }
+}
+
 
 /* Stats Block */
 .stats-row{
