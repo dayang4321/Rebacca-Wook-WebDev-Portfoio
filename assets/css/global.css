@@ -87,6 +87,11 @@ h4 {
     border-radius: 4px;
     box-sizing: border-box;
 }
+.btn:hover, .btn:focus, .btn:active {
+    -webkit-box-shadow: 0 5px 11px 0 rgba(0, 173, 181, 0.15), 0 4px 15px 0 rgba(0, 173, 181, 0.15);
+    box-shadow: 0 5px 11px 0 rgba(0, 173, 181, 0.15), 0 4px 15px 0 rgba(0, 173, 181, 0.15);
+    transform: scale(1.04);
+}
 
 .btn-outline-primary {
     color: var(--primary-color)!important;
