@@ -22,6 +22,7 @@
 
 html{
     scroll-behavior: smooth!important;
+    overflow-x: hidden;
 }
 
 body {  
@@ -30,13 +31,15 @@ body {
     color:  var(--dark-color);
     position: relative;
     font-size: var(--body-text-font-size);
+    overflow-x: hidden;
 }
 
-#particle{
+#particles-js{
     position: absolute;
-    height: inherit;
-    width: 97%;
-}
+    display: flex;
+    height:inherit;
+    min-height: 650px;
+  }
 
 /* Wow.js Visibility on page load*/
 .wow {

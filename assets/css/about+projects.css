@@ -13,7 +13,6 @@
     box-shadow: 1px 2px 9px rgba(55, 20, 153, 0.1);
     border-radius: 8px;
     margin: 3px 1.5px ;
-    z-index: 1;
     position: relative;
 }
 
@@ -69,6 +68,8 @@
 
 
 /* About Section*/
+
+
 .about-me-title{
     line-height: 48px;
     color: var(--dark-color);

@@ -4,9 +4,13 @@ $( document ).ready(function() {
     new WOW().init();
 });
   
-//Loading Fuction
+
+
 window.onload = (event) => {
-    document.getElementById("loading").style.display = "none";
+    $('#loading').addClass('animated fadeOut fast');
+    $('#loading').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+        document.getElementById("loading").style.display = "none" )
+
 }
 
 
@@ -55,10 +59,5 @@ $(window).scroll(function() {
     }
  });
 
- /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
-particlesJS.load('particle', 'assets/js/particles-3.json', function() {
-    // console.log('callback - particles.js config loaded');
-}
-);
 
 
